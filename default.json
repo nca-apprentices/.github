@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Defaults for every nca-apprentices repository. A repository extends github>nca-apprentices/.github and adds its own rules.",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigestsToSemver"],
+  "timezone": "Europe/Zurich",
+  "schedule": ["* 0-5 1,15 * *"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "prHourlyLimit": 0,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["* 0-5 1,15 * *"]
+  }
+}
